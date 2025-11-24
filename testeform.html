@@ -110,27 +110,71 @@
            
                
 
-                  <div class="content">
-                    <p class="lead">
-                     Carapicuíba, SP — A cidade se prepara para um evento especial voltado aos amantes de animais e famílias que desejam levar um novo companheiro para casa. No 11 de dezembro/ 2025, será realizada a Feira Municipal de Adoção de Pets de Carapicuíba, reunindo cães e gatos resgatados por ONGs e protetores independentes da região.
-                    </p>
+                      <div class="container">
+        <h1>🐾 Formulário de Contato</h1>
+        <p class="subtitle">Preencha os dados abaixo para entrar em contato</p>
 
-                    <p>
-                    O evento será na Praça da Aldeia, das 10h às 16h, com entrada gratuita. A iniciativa tem como objetivo incentivar a adoção responsável e dar visibilidade ao trabalho das instituições que atuam diariamente no resgate e cuidado dos animais abandonados.
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo <span class="required">*</span></label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
 
-                    <p>
-                      Segundo os organizadores, mais de 80 animais estarão disponíveis para adoção, todos vacinados, vermifugados e castrados (ou com castração garantida). Haverá também uma equipe pronta para orientar os visitantes sobre cuidados essenciais, adaptação dos pets e responsabilidades de um tutor.
-                    </p>
+            <div class="form-group">
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-                     <h2>Além das adoções, a feira contará com:</h2>
-                  
-                    <ul>
-                      <li>Espaço de convivência para interação com os animais</li>
-                      <li>Tendas de ONGs locais e de protetores independentes</li>
-                      <li>Campanha de arrecadação de ração e cobertores</li>
-                      <li>Área kids com atividades educativas</li>
-                    </ul>
+            <div class="form-group">
+                <label for="telefone">Telefone <span class="required">*</span></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
 
+            <div class="form-group">
+                <label for="endereco">Endereço Completo <span class="required">*</span></label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Bairro, Cidade - Estado" required>
+            </div>
+
+            <div class="form-group">
+                <label>Como você deseja ajudar? <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="adotar" name="tipoAjuda" value="adotar" required>
+                        <label for="adotar">Quero adotar um pet</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="voluntario" name="tipoAjuda" value="voluntario">
+                        <label for="voluntario">Quero ser voluntário(a)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="financeiro" name="tipoAjuda" value="financeiro">
+                        <label for="financeiro">Quero ajudar financeiramente</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="infoPet">Informações do Pet (se aplicável)</label>
+                <textarea id="infoPet" name="infoPet" placeholder="Nome do pet, espécie, idade, características..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte-nos mais sobre sua intenção..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="termo" name="termo" required>
+                    <label for="termo">
+                        <span class="required">*</span> Li e concordo com o termo de responsabilidade. Declaro que as informações fornecidas são verdadeiras e me comprometo a cuidar do animal com responsabilidade e amor.
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Formulário</button>
+        </form>
+    </div>
 
   </main>
 
