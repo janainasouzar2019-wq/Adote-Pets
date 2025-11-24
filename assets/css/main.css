@@ -2233,29 +2233,40 @@ section,
 # Portfolio Details Section
 --------------------------------------------------------------*/
 /* Deixa as imagens quadradas e alinhadas */
+/* Caixa da imagem */
 .slide-box {
   width: 100%;
-  max-width: 450px; /* tamanho do quadrado (pode aumentar) */
+  max-width: 450px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 20px; /* adiciona espaço abaixo da imagem */
 }
 
+/* Imagem quadrada */
 .slide-box img {
   width: 100%;
-  height: 450px; /* mesma medida do max-width */
-  object-fit: cover; /* corta a imagem para caber no quadrado */
+  height: 450px;
+  object-fit: cover;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
 }
 
-/* Legenda */
+/* Legenda ajustada */
 .slide-caption {
-  margin-top: 50px;
+  margin-top: 15px;   /* distância da imagem */
+  margin-bottom: 20px; /* distância das bolinhas */
   font-size: 16px;
-  color: #555;
+  color: #444;
   font-weight: 500;
 }
+
+/* Espaço extra acima das bolinhas do Swiper */
+.adote-details-slider .swiper-pagination {
+  margin-top: 20px !important;
+  position: relative;
+}
+
 
 
 
