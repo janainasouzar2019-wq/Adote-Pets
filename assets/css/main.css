@@ -2232,21 +2232,31 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-/* Evita que a imagem estoure o espaço do slide */
-/* Define o tamanho padrão que TODAS as imagens terão */
-.portfolio-details .portfolio-details-slider .swiper-slide {
-  height: 420px; /* ajuste como quiser: 350px, 400px, 500px */
-  overflow: hidden;
-  border-radius: 10px; /* opcional */
+/* Deixa as imagens quadradas e alinhadas */
+.slide-box {
+  width: 100%;
+  max-width: 450px; /* tamanho do quadrado (pode aumentar) */
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Garantir que todas as imagens fiquem do mesmo tamanho */
-.portfolio-details .portfolio-details-slider .swiper-slide img {
+.slide-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* corta sem distorcer */
-  object-position: center;
+  height: 450px; /* mesma medida do max-width */
+  object-fit: cover; /* corta a imagem para caber no quadrado */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
+
+/* Legenda */
+.slide-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
 
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
