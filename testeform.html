@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog</title>
+  <title>Formulário • Adote Pets</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,9 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&family=Jost:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
 <body class="testeform-page">
@@ -43,22 +40,20 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#adoçao">Adoção</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="#sobre">Get Started</a>
 
     </div>
   </header>
 
   <!-- MAIN -->
-  <main class="main">
+  <main class="main" style="margin-top:6rem;">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -66,122 +61,184 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Blog</li>
+            <li class="current">Formulário</li>
           </ol>
         </nav>
-        <h1>Blog</h1>
+        <h1>Formulário de Contato</h1>
       </div>
     </div>
 
-    <!-- Blog + Formulário -->
-    <div class="container">
-      <div class="row">
+    <!-- Form Section -->
+    <section id="testeform" class="blog-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <!-- main column -->
+          <div class="col-lg-8">
+            <article class="article">
+              <h2>🐾 Fale Conosco</h2>
+              <p class="subtitle">Preencha os dados abaixo para entrar em contato</p>
 
-        <!-- COLUNA PRINCIPAL -->
-        <div class="col-lg-8">
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome Completo <span class="required">*</span></label>
+                  <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
 
-          <!-- BLOG DETAILS -->
-          <section id="testeform" class="blog-details section">
-            <div class="container" data-aos="fade-up">
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
 
-              <article class="article">
+                <div class="mb-3">
+                  <label for="telefone" class="form-label">Telefone <span class="required">*</span></label>
+                  <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+                </div>
 
-                <h2>🐾 Formulário de Contato</h2>
-                <p class="subtitle">Preencha os dados abaixo para entrar em contato</p>
+                <div class="mb-3">
+                  <label for="endereco" class="form-label">Endereço Completo <span class="required">*</span></label>
+                  <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Rua, Número, Bairro, Cidade - Estado" required>
+                </div>
 
-                <!-- FORMULÁRIO -->
-                <form id="contactForm">
-
-                  <div class="form-group">
-                    <label for="nome">Nome Completo <span class="required">*</span></label>
-                    <input type="text" id="nome" name="nome" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="email">E-mail <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="telefone">Telefone <span class="required">*</span></label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="endereco">Endereço Completo <span class="required">*</span></label>
-                    <input type="text" id="endereco" name="endereco"
-                      placeholder="Rua, Número, Bairro, Cidade - Estado" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label>Como você deseja ajudar? <span class="required">*</span></label>
-
-                    <div class="radio-group">
-                      <div class="radio-option">
-                        <input type="radio" id="adotar" name="tipoAjuda" value="adotar" required>
-                        <label for="adotar">Quero adotar um pet</label>
-                      </div>
-
-                      <div class="radio-option">
-                        <input type="radio" id="voluntario" name="tipoAjuda" value="voluntario">
-                        <label for="voluntario">Quero ser voluntário(a)</label>
-                      </div>
-
-                      <div class="radio-option">
-                        <input type="radio" id="financeiro" name="tipoAjuda" value="financeiro">
-                        <label for="financeiro">Quero ajudar financeiramente</label>
-                      </div>
+                <div class="mb-3">
+                  <label class="form-label">Como você deseja ajudar? <span class="required">*</span></label>
+                  <div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="adotar" name="tipoAjuda" value="adotar" required>
+                      <label class="form-check-label" for="adotar">Quero adotar um pet</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="voluntario" name="tipoAjuda" value="voluntario">
+                      <label class="form-check-label" for="voluntario">Quero ser voluntário(a)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" id="financeiro" name="tipoAjuda" value="financeiro">
+                      <label class="form-check-label" for="financeiro">Quero ajudar financeiramente</label>
                     </div>
                   </div>
+                </div>
 
-                  <div class="form-group">
-                    <label for="infoPet">Informações do Pet (se aplicável)</label>
-                    <textarea id="infoPet" name="infoPet"
-                      placeholder="Nome do pet, espécie, idade, características..."></textarea>
-                  </div>
+                <div class="mb-3">
+                  <label for="infoPet" class="form-label">Informações do Pet (se aplicável)</label>
+                  <textarea id="infoPet" name="infoPet" class="form-control" placeholder="Nome do pet, espécie, idade, características..."></textarea>
+                </div>
 
-                  <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem"
-                      placeholder="Conte-nos mais sobre sua intenção..."></textarea>
-                  </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Conte-nos mais sobre sua intenção..." rows="4"></textarea>
+                </div>
 
-                  <div class="form-group">
-                    <div class="checkbox-group">
-                      <input type="checkbox" id="termo" name="termo" required>
-                      <label for="termo">
-                        <span class="required">*</span> Li e concordo com o termo de responsabilidade.
-                      </label>
-                    </div>
-                  </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" id="termo" name="termo" class="form-check-input" required>
+                  <label for="termo" class="form-check-label"><span class="required">*</span> Li e concordo com o termo de responsabilidade.</label>
+                </div>
 
-                  <button type="submit" class="submit-btn">Enviar Formulário</button>
-                </form>
+                <button type="submit" class="btn btn-primary">Enviar Formulário</button>
+              </form>
 
-                <!-- SCRIPT DO FORM -->
-                <script>
-                  document.getElementById('contactForm').addEventListener('submit', function (e) {
-                    e.preventDefault();
+            </article>
+          </div>
 
-                    const formData = {
-                      nome: document.getElementById('nome').value,
-                      email: document.getElementById('email').value,
-                      telefone: document.getElementById('telefone').value,
-                      endereco: document.getElementById('endereco').value,
-                      tipoAjuda: document.querySelector('input[name="tipoAjuda"]:checked')?.value,
-                      infoPet: document.getElementById('infoPet').value,
-                      mensagem: document.getElementById('mensagem').value,
-                      termoAceito: document.getElementById('termo').checked
-                    };
+          <!-- sidebar (se quiser conteúdo) -->
+          <div class="col-lg-4">
+            <div class="card p-3">
+              <h5>Ajuda rápida</h5>
+              <p>Se tiver dúvida sobre o formulário, entre em contato pelo e-mail <a href="mailto:info@adotepets.com.br">info@adotepets.com.br</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    console.log('Dados do formulário:', formData);
-                    alert('Formulário enviado com sucesso!');
-                  });
+  </main>
 
-                  // Máscara Telefone
-                  document.getElementById('telefone').addEventListener('input', function (e) {
-                    let value = e.target.value.replace(/\D/g, '');
-                    if (value.length > 11) value = value.slice(0, 11);
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container text-center mt-4">
+      <p>© <strong>Adote Pets</strong> - Todos os direitos reservados</p>
+    </div>
+  </footer>
 
-                    if (value.length > 6) {
-                      va
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Form script (completa e protegida) -->
+  <script>
+    (function () {
+      // evita erros caso elementos não existam
+      const contactForm = document.getElementById('contactForm');
+      const telefone = document.getElementById('telefone');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const tipoChecked = document.querySelector('input[name="tipoAjuda"]:checked');
+          const formData = {
+            nome: document.getElementById('nome')?.value || '',
+            email: document.getElementById('email')?.value || '',
+            telefone: telefone?.value || '',
+            endereco: document.getElementById('endereco')?.value || '',
+            tipoAjuda: tipoChecked?.value || '',
+            infoPet: document.getElementById('infoPet')?.value || '',
+            mensagem: document.getElementById('mensagem')?.value || '',
+            termoAceito: document.getElementById('termo')?.checked || false
+          };
+
+          console.log('Dados do formulário:', formData);
+
+          // validação simples antes de enviar
+          if (!formData.nome || !formData.email || !formData.telefone || !formData.endereco || !formData.termoAceito) {
+            alert('Por favor, preencha os campos obrigatórios e aceite o termo.');
+            return;
+          }
+
+          // aqui você pode enviar para o backend via fetch()
+          // exemplo (descomente e ajuste a URL quando tiver backend pronto):
+          /*
+          fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+          }).then(resp => {
+            if (resp.ok) alert('Formulário enviado com sucesso!');
+            else alert('Erro ao enviar formulário.');
+          }).catch(err => {
+            console.error(err);
+            alert('Erro ao enviar formulário.');
+          });
+          */
+
+          // fallback para desenvolvimento:
+          alert('Formulário enviado com sucesso! (simulado)');
+          contactForm.reset();
+        });
+      }
+
+      // máscara de telefone (completa)
+      if (telefone) {
+        telefone.addEventListener('input', function (e) {
+          let value = e.target.value.replace(/\D/g, '');
+          if (value.length > 11) value = value.slice(0, 11);
+
+          if (value.length > 6) {
+            value = value.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3');
+          } else if (value.length > 2) {
+            value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+          } else if (value.length > 0) {
+            value = value.replace(/^(\d*)/, '($1');
+          }
+
+          e.target.value = value;
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
