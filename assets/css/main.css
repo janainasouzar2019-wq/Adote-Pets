@@ -2233,18 +2233,21 @@ section,
 # Portfolio Details Section
 --------------------------------------------------------------*/
 /* Evita que a imagem estoure o espaço do slide */
+/* Define o tamanho padrão que TODAS as imagens terão */
+.portfolio-details .portfolio-details-slider .swiper-slide {
+  height: 420px; /* ajuste como quiser: 350px, 400px, 500px */
+  overflow: hidden;
+  border-radius: 10px; /* opcional */
+}
+
+/* Garantir que todas as imagens fiquem do mesmo tamanho */
 .portfolio-details .portfolio-details-slider .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* corta sem distorcer */
   object-position: center;
 }
 
-/* Define uma altura padrão para o slide */
-.portfolio-details .portfolio-details-slider .swiper-slide {
-  height: 400px; /* pode ajustar conforme seu layout */
-  overflow: hidden;
-}
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
